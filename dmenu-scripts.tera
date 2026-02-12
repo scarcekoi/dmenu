@@ -4,7 +4,7 @@ whiskers:
   matrix:
     - flavor
     - accent
-  filename: "scripts/dmenu-{{ flavor.identifier }}-{{ accent }}.sh"
+  filename: "scripts/{{ flavor.identifier }}/dmenu-{{ flavor.identifier }}-{{ accent }}.sh"
 ---
 {%- set palette = flavor.colors -%}
 dmenu_run -nf '#{{ palette.text.hex }}' -nb '#{{ palette.base.hex }}'\
